@@ -1,0 +1,493 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Majid Abdelali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style/style.css">
+<link rel="icon" type="image/png" href="/img/logo.png">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- Animated Background Canvas -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">MAJID</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#works">Projects</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="glow-orb" style="width:600px;height:600px;background:radial-gradient(circle, rgba(126,255,212,0.4), transparent);top:-200px;right:-100px;"></div>
+  <div class="glow-orb" style="width:400px;height:400px;background:radial-gradient(circle, rgba(167,139,250,0.3), transparent);bottom:0;left:-100px;"></div>
+  <p class="hero-tag">Available for work 2026</p>
+  <p class="hero-greeting">Hi, I'm</p>
+  <h1 class="hero-name">MAJ<span>ID</span></h1>
+  <h2 class="hero-headline">Wellcome to my portfolio.</h2>
+  <p class="hero-desc">I engineer scalable full-stack solutions and intelligent systems at ISIMM, bridging the gap between robust backend logic and intuitive user experiences for the next generation of digital products.</p>
+  <div class="hero-ctas">
+    <a href="#contact" class="btn-primary">Get Started</a>
+    <a href="#works" class="btn-outline">See Projects</a>
+  </div>
+  <div class="home__img" aria-hidden="true">
+    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg">
+      <mask id="mask0" mask-type="alpha">
+        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+      </mask>
+      <g mask="url(#mask0)">
+        <path class="home__blob-shape" d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+        <image class="home__blob-img" x="46" y="-10" width="390" height="540" href="img/majid.png" preserveAspectRatio="xMidYMid meet"/>
+      </g>
+    </svg>
+  </div>
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    Scroll to explore
+  </div>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-num">3+</div>
+      <div class="stat-label"><br>Projects</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">1+</div>
+      <div class="stat-label"><br> Years Exp.</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">100%</div>
+      <div class="stat-label"><br> Satisfaction</div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marquee-track">
+    <div class="marquee-item"><span class="dot"></span>React.js</div>
+    <div class="marquee-item"><span class="dot"></span>Node.js</div>
+    <div class="marquee-item"><span class="dot"></span>MySQL</div>
+    <div class="marquee-item"><span class="dot"></span>Next.js</div>
+    <div class="marquee-item"><span class="dot"></span>Python</div>
+    <div class="marquee-item"><span class="dot"></span>Figma</div>
+    <div class="marquee-item"><span class="dot"></span>React.js</div>
+    <div class="marquee-item"><span class="dot"></span>Node.js</div>
+    <div class="marquee-item"><span class="dot"></span>PostgreSQL</div>
+    <div class="marquee-item"><span class="dot"></span>Next.js</div>
+    <div class="marquee-item"><span class="dot"></span>Python</div>
+    <div class="marquee-item"><span class="dot"></span>Figma</div>
+    <div class="marquee-item"><span class="dot"></span>MySQL</div>
+    <div class="marquee-item"><span class="dot"></span>Html</div>
+    <div class="marquee-item"><span class="dot"></span>CSS</div>
+    <div class="marquee-item"><span class="dot"></span>JavaScript</div>
+    <div class="marquee-item"><span class="dot"></span>C/C++</div>
+    <div class="marquee-item"><span class="dot"></span>Java</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-wrap reveal">
+        <div class="about-img-box">
+          <img class="about-img-photo" src="img/majid_bg.jpeg" alt="Majid portrait" />
+        </div>
+        <div class="about-corner tl"></div>
+        <div class="about-corner br"></div>
+        <div class="about-badge">
+          <div class="about-badge-num">1+</div>
+          <div class="about-badge-txt">Years of Craft</div>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-label reveal">About Me</p>
+        <h2 class="section-title reveal">Turning Ideas Into <br>Digital <em style="font-style:normal;color:var(--accent)">Reality</em></h2>
+        <p class="about-bio reveal">I am a Computer Science Student at ISIMM and an aspiring Software Engineer. My approach to development is rooted in a desire to understand the full lifecycle of an application - from the low-level memory management of C to the high-level, user-centric design of modern web frameworks.</p>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-period">What I'm Working On</div>
+            <div class="timeline-role">Full-Stack Architecture</div>
+            <div class="timeline-co">I am deep-diving into full-stack architecture, bridging static interfaces and dynamic, data-driven user experiences. Whether I am optimizing a Next.js rendering strategy or implementing a backend in Python or PHP, I focus on code that is performant, readable, and scalable.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-period">My Toolkit</div>
+            <div class="timeline-role">Languages</div>
+            <div class="timeline-co">Python , PHP , JavaScript/Java/C++ , plus a strong foundation in HTML5/CSS3.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-period">Frameworks and Tools</div>
+            <div class="timeline-role">Modern Web Stack</div>
+            <div class="timeline-co">Next.js, React, and building RESTful environments.</div>
+          </div>
+          <div class="timeline-item" style="padding-bottom:0">
+            <div class="timeline-period">Specialized Interests</div>
+            <div class="timeline-role">Engineering + Product Thinking</div>
+            <div class="timeline-co">Machine Learning, UI/UX Design, and Software Architecture.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section class="works" id="works">
+  <div class="container">
+    <div class="works-header">
+      <div>
+        <p class="section-label reveal"> Recent Works</p>
+        <h2 class="section-title reveal">Selected <br>Projects</h2>
+      </div>
+      <a href="#" class="btn-outline reveal" style="align-self:flex-end">All Projects</a>
+    </div>
+    <div class="portfolio-grid reveal">
+      <div class="project-card">
+        <div class="project-thumb">
+          <iframe
+            class="project-thumb-frame"
+            src="http://elmajed-assistant.com"
+            title="Project 01 website preview"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="proj-glyph">01</div>
+          <div class="project-overlay">
+            <a href="http://elmajed-assistant.com/" class="overlay-btn">View Project</a>
+            <a href="http://elmajed-assistant.com/" class="overlay-btn">Read Case Study</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag">Chez El Majd Assistance</div>
+          <div class="project-name">EL MAJD Assistance Website</div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-thumb">
+          <div class="proj-glyph">02</div>
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn">View Project</a>
+            <a href="#" class="overlay-btn">Read Case Study</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag">2026</div>
+          <div class="project-name">Platform</div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-thumb">
+          <div class="proj-glyph">03</div>
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn">View Project</a>
+            <a href="#" class="overlay-btn">Read Case Study</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag">2026</div>
+          <div class="project-name">Platform</div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-thumb">
+          <div class="proj-glyph">04</div>
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn">View Project</a>
+            <a href="#" class="overlay-btn">Read Case Study</a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag">2026</div>
+          <div class="project-name">Platform</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="container">
+    <p class="section-label reveal">My Process</p>
+    <h2 class="section-title reveal">How I Work</h2>
+    <div class="process-grid">
+      <div class="process-step reveal reveal-delay-1">
+        <div class="step-num">01</div>
+        <div class="step-title">Discovery & Strategy</div>
+        <p class="step-desc">We start with deep conversations. I learn your business goals, target audience, and technical constraints. From there I architect a clear roadmap â€” no guesswork, just direction.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="step-num">02</div>
+        <div class="step-title">Execution & Build</div>
+        <p class="step-desc">With a clear plan in hand, I move fast without sacrificing quality. Clean code, daily updates, and iterative reviews ensure we stay aligned from wireframe to working product.</p>
+      </div>
+      <div class="process-step reveal reveal-delay-3">
+        <div class="step-num">03</div>
+        <div class="step-title">Launch & Support</div>
+        <p class="step-desc">I handle deployment, testing, and optimization. Post-launch, I'm on standby. Your success is the metric that matters â€” I stick around to make sure we hit it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-grid">
+      <div class="services-visual reveal">
+        <div class="visual-box visual-box-primary">
+          <p class="visual-eyebrow">SKILLS / SERVICES</p>
+          <h3 class="visual-title">Full-Stack Focus</h3>
+          <p class="visual-desc">Designing fast interfaces.</p>
+          <div class="visual-tags" aria-label="Key stack">
+            <span>HTML/CSS</span>
+            <span>C/C++</span>
+            <span>Node</span>
+            <span>Python</span>
+          </div>
+        </div>
+        <div class="visual-box visual-box-secondary" aria-hidden="true">
+          <div class="visual-lines"></div>
+        </div>
+        <div class="skills-float" style="animation: float 4s ease-in-out infinite;">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:0.65rem;color:var(--accent);letter-spacing:0.2em;margin-bottom:0.75rem;">CORE SKILLS</div>
+          <div class="skill-pill">React / Next.js</div>
+          <div class="skill-pill">Node / Express</div>
+          <div class="skill-pill">JavaScript</div>
+          <div class="skill-pill">PostgreSQL / MySQL</div>
+          <div class="skill-pill">HTML / CSS</div>
+          <div class="skill-pill">C/C++</div>
+          <div class="skill-pill">Java</div>
+          <div class="skill-pill">Performance Opt.</div>
+        </div>
+      </div>
+      <div>
+        <p class="section-label reveal">Skills</p>
+        <h2 class="section-title reveal">What I Do <br>Best</h2>
+        <div class="service-list reveal">
+          <div class="service-item">
+            <div class="service-top">
+              <div class="service-left">
+                <span class="service-icon">H5</span>
+                <span class="service-name">HTML5</span>
+              </div>
+              <span class="service-percent">95%</span>
+            </div>
+            <div class="service-bar"><span style="width:95%"></span></div>
+          </div>
+          <div class="service-item">
+            <div class="service-top">
+              <div class="service-left">
+                <span class="service-icon">C3</span>
+                <span class="service-name">CSS3</span>
+              </div>
+              <span class="service-percent">85%</span>
+            </div>
+            <div class="service-bar"><span style="width:85%"></span></div>
+          </div>
+          <div class="service-item">
+            <div class="service-top">
+              <div class="service-left">
+                <span class="service-icon">JS</span>
+                <span class="service-name">JAVASCRIPT</span>
+              </div>
+              <span class="service-percent">65%</span>
+            </div>
+            <div class="service-bar"><span style="width:65%"></span></div>
+          </div>
+          <div class="service-item">
+            <div class="service-top">
+              <div class="service-left">
+                <span class="service-icon">C+</span>
+                <span class="service-name">C/C++</span>
+              </div>
+              <span class="service-percent">65%</span>
+            </div>
+            <div class="service-bar"><span style="width:65%"></span></div>
+          </div>
+          <div class="service-item">
+            <div class="service-top">
+              <div class="service-left">
+                <span class="service-icon">J</span>
+                <span class="service-name">JAVA</span>
+              </div>
+              <span class="service-percent">65%</span>
+            </div>
+            <div class="service-bar"><span style="width:65%"></span></div>
+          </div>
+          <div class="service-item">
+            <div class="service-top">
+              <div class="service-left">
+                <span class="service-icon">PY</span>
+                <span class="service-name">PYTHON</span>
+              </div>
+              <span class="service-percent">80%</span>
+            </div>
+            <div class="service-bar"><span style="width:80%"></span></div>
+          </div>
+          <div class="service-item">
+            <div class="service-top">
+              <div class="service-left">
+                <span class="service-icon">PHP</span>
+                <span class="service-name">PHP</span>
+              </div>
+              <span class="service-percent">75%</span>
+            </div>
+            <div class="service-bar"><span style="width:75%"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <p class="section-label reveal">Client Reviews</p>
+    <h2 class="section-title reveal">What People <br>Say</h2>
+    <div class="reviews-grid">
+      <div class="review-card reveal reveal-delay-1">
+        <div class="stars">Balbali Saif</div>
+        <p class="review-text">"Majid delivered our SaaS platform three weeks ahead of schedule with flawless code quality. His ability to understand complex business requirements and translate them into elegant solutions is truly remarkable."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">BS</div>
+          <div>
+            <div class="reviewer-name">Balbali Saif</div>
+            <div class="reviewer-title">CTO, NexaFlow Inc.</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal reveal-delay-2">
+        <div class="stars">Mahid Saadaoui</div>
+        <p class="review-text">"Working with Majid was the best investment we made this year. Our conversion rate increased 340% after he rebuilt our e-commerce platform. The attention to performance and UX was extraordinary."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">MS</div>
+          <div>
+            <div class="reviewer-name">Mahid Saadaoui</div>
+            <div class="reviewer-title">Founder, Velour Brand</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal reveal-delay-3">
+        <div class="stars">Balbali Mahmoud</div>
+        <p class="review-text">"Majid is the rare developer who is both technically brilliant and a genuine pleasure to collaborate with. He anticipates problems before they arise and communicates clearly every step of the way."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">BM</div>
+          <div>
+            <div class="reviewer-name">Balbali Mahmoud</div>
+            <div class="reviewer-title">Product Lead, Vaultify</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stats-row reveal">
+      <div class="stat-box">
+        <span class="stat-num">3+</span>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">100%</span>
+        <div class="stat-label">Client Satisfaction</div>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">1+</span>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">3+</span>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="faq-aside">
+        <p class="section-label reveal">FAQ</p>
+        <h2 class="section-title reveal">Common <br>Questions</h2>
+        <p class="reveal">Have something else on your mind? Reach out directly ” I respond to every message within 24 hours.</p>
+        <a href="#contact" class="btn-outline reveal">Ask a Question</a>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item open">
+          <div class="faq-q">What is your pricing structure? <span class="faq-icon">+</span></div>
+          <div class="faq-a">I work on both project-based and retainer models. Project pricing starts at $3,000 for smaller builds and scales based on complexity and timeline. For ongoing work, monthly retainers offer the best value. I provide a detailed proposal after our discovery call.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How long does a typical project take? <span class="faq-icon">+</span></div>
+          <div class="faq-a">Most projects range from 4â€“12 weeks. A landing page or MVP might take 2â€“4 weeks, while a full-featured SaaS platform typically needs 8â€“16 weeks. I'll give you a realistic timeline upfront â€” no surprise delays.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do you work with early-stage startups? <span class="faq-icon">+</span></div>
+          <div class="faq-a">Absolutely. Some of my favorite projects have been zero-to-one builds with early-stage founders. I can help with MVP strategy, technology selection, and building something that can scale as you grow.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What information do you need to start? <span class="faq-icon">+</span></div>
+          <div class="faq-a">Just tell me your idea, goals, and rough timeline. We'll schedule a discovery call where I'll ask the right questions. From there, I put together a proposal within 48 hours.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do you offer post-launch maintenance? <span class="faq-icon">+</span></div>
+          <div class="faq-a">Yes. I offer maintenance retainers that include bug fixes, security updates, performance monitoring, and new feature additions. Most clients continue working with me long after launch.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER / CTA -->
+<footer class="footer-cta" id="contact">
+  <div class="glow-orb" style="width:700px;height:700px;background:radial-gradient(circle, rgba(126,255,212,0.2), transparent);top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+  <p class="cta-eyebrow reveal">Let's Build Something</p>
+  <h2 class="footer-cta .cta-headline reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,7rem);line-height:1;letter-spacing:0.02em;max-width:900px;margin:0 auto 3rem;color:var(--text);">
+    Curious about what we can <em style="font-style:normal;color:var(--accent);">create together?</em><br>
+    Let's bring something <em style="font-style:normal;color:var(--accent2);">extraordinary</em> to life.
+  </h2>
+  <a href="mailto:majidoumd1207@gmail.com" class="btn-primary" style="font-size:0.9rem;padding:1.1rem 2.8rem;">Book a Call</a>
+  <div class="footer-links">
+    <a href="mailto:majidoumd1207@gmail.com" class="footer-email">majidoumd1207@gmail.com</a>
+    <span class="footer-copy">2026 Majid. All rights reserved.</span>
+  </div>
+  <div class="footer-social" aria-label="Social links">
+    <a href="https://www.linkedin.com/in/majid-abdelali-b967b9320/" class="footer-icon-link" aria-label="LinkedIn" title="LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5V20H3.26V8.5h3.68zM5.1 3C3.92 3 3 3.86 3 4.96c0 1.08.9 1.96 2.06 1.96H5.1c1.2 0 2.08-.88 2.08-1.96C7.16 3.86 6.28 3 5.1 3zM21 12.87C21 9.42 19.17 7.8 16.73 7.8c-1.98 0-2.86 1.09-3.35 1.85V8.5H9.7c.05.76 0 11.5 0 11.5h3.68v-6.42c0-.34.02-.68.13-.92.27-.68.88-1.39 1.9-1.39 1.34 0 1.88 1.03 1.88 2.54V20H21v-7.13z"/></svg>
+    </a>
+    <a href="https://github.com/MajidAbdelali" class="footer-icon-link" aria-label="GitHub" title="GitHub">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.6 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.49-1.11-1.49-.9-.64.07-.63.07-.63 1 .07 1.52 1.05 1.52 1.05.88 1.56 2.31 1.11 2.88.85.09-.66.34-1.11.62-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.28 9.28 0 0 1 12 6.5c.85 0 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.33 4.8-4.56 5.06.36.32.68.93.68 1.87 0 1.35-.01 2.44-.01 2.77 0 .27.18.6.69.49A10.27 10.27 0 0 0 22 12.26C22 6.6 17.52 2 12 2z"/></svg>
+    </a>
+    <a href="https://discord.com/users/1234567890" class="footer-icon-link" aria-label="Discord" title="Discord">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.32 4.37A19.8 19.8 0 0 0 15.4 3a13.67 13.67 0 0 0-.63 1.3 18.18 18.18 0 0 0-5.54 0A13.67 13.67 0 0 0 8.6 3a19.8 19.8 0 0 0-4.92 1.37C.57 9.12-.27 13.76.12 18.33a19.95 19.95 0 0 0 6.04 3.06c.49-.68.92-1.4 1.3-2.15-.72-.28-1.4-.63-2.04-1.03.17-.13.33-.27.49-.41 3.92 1.88 8.16 1.88 12.03 0 .16.14.32.28.49.41-.64.4-1.33.75-2.05 1.03.38.75.82 1.47 1.31 2.15a19.9 19.9 0 0 0 6.03-3.06c.46-5.3-.79-9.9-3.4-13.96zM8.5 15.56c-1.18 0-2.14-1.12-2.14-2.49 0-1.36.95-2.48 2.14-2.48 1.2 0 2.16 1.12 2.14 2.48 0 1.37-.95 2.49-2.14 2.49zm7 0c-1.18 0-2.14-1.12-2.14-2.49 0-1.36.95-2.48 2.14-2.48 1.2 0 2.16 1.12 2.14 2.48 0 1.37-.95 2.49-2.14 2.49z"/></svg>
+    </a>
+    <a href="https://www.facebook.com/majid.abdelali.18" class="footer-icon-link" aria-label="Facebook" title="Facebook">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.87.25-1.46 1.5-1.46h1.6V4.98c-.28-.04-1.25-.12-2.38-.12-2.35 0-3.96 1.46-3.96 4.13V11H8v3h2.24v8h3.26z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/majid_abdel_ali/" class="footer-icon-link" aria-label="Instagram" title="Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm-.2 2A3.55 3.55 0 0 0 4 7.55v8.9A3.55 3.55 0 0 0 7.55 20h8.9A3.55 3.55 0 0 0 20 16.45v-8.9A3.55 3.55 0 0 0 16.45 4h-8.9zM17.7 5.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
+
+
+
