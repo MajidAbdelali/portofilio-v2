@@ -1,22 +1,29 @@
 ﻿// Custom Cursor
 const cursor = document.getElementById('cursor');
 const ring = document.getElementById('cursor-ring');
-let mx = 0, my = 0, rx = 0, ry = 0;
-document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-function animCursor() {
-  cursor.style.left = mx + 'px';
-  cursor.style.top = my + 'px';
-  rx += (mx - rx) * 0.12;
-  ry += (my - ry) * 0.12;
-  ring.style.left = rx + 'px';
-  ring.style.top = ry + 'px';
-  requestAnimationFrame(animCursor);
+const hasFinePointer = window.matchMedia('(pointer: fine)').matches;
+if (hasFinePointer && cursor && ring) {
+  let mx = 0, my = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+  function animCursor() {
+    cursor.style.left = mx + 'px';
+    cursor.style.top = my + 'px';
+    rx += (mx - rx) * 0.12;
+    ry += (my - ry) * 0.12;
+    ring.style.left = rx + 'px';
+    ring.style.top = ry + 'px';
+    requestAnimationFrame(animCursor);
+  }
+  animCursor();
+  document.querySelectorAll('a, button, .faq-q, .service-item, .project-card').forEach(el => {
+    el.addEventListener('mouseenter', () => { cursor.style.transform = 'translate(-50%,-50%) scale(2.5)'; ring.style.opacity = '0'; });
+    el.addEventListener('mouseleave', () => { cursor.style.transform = 'translate(-50%,-50%) scale(1)'; ring.style.opacity = '1'; });
+  });
+} else {
+  document.body.style.cursor = 'auto';
+  if (cursor) cursor.style.display = 'none';
+  if (ring) ring.style.display = 'none';
 }
-animCursor();
-document.querySelectorAll('a, button, .faq-q, .service-item, .project-card').forEach(el => {
-  el.addEventListener('mouseenter', () => { cursor.style.transform = 'translate(-50%,-50%) scale(2.5)'; ring.style.opacity = '0'; });
-  el.addEventListener('mouseleave', () => { cursor.style.transform = 'translate(-50%,-50%) scale(1)'; ring.style.opacity = '1'; });
-});
 
 // Background Canvas — Fluid Mesh Gradient
 const canvas = document.getElementById('bg-canvas');
@@ -80,11 +87,23 @@ document.querySelectorAll('.faq-q').forEach(q => {
 
 // Nav shrink on scroll
 const navEl = document.querySelector('nav');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 80) {
-    navEl.style.padding = '0.9rem 4rem';
-  } else {
-    navEl.style.padding = '1.4rem 4rem';
+function getNavPadding() {
+  if (window.innerWidth <= 680) {
+    return { base: '0.95rem 1rem', compact: '0.8rem 1rem' };
   }
-});
+  if (window.innerWidth <= 980) {
+    return { base: '1rem 1.4rem', compact: '0.8rem 1.4rem' };
+  }
+  return { base: '1.4rem 4rem', compact: '0.9rem 4rem' };
+}
+
+function syncNavPadding() {
+  if (!navEl) return;
+  const navPadding = getNavPadding();
+  navEl.style.padding = window.scrollY > 80 ? navPadding.compact : navPadding.base;
+}
+
+window.addEventListener('scroll', syncNavPadding);
+window.addEventListener('resize', syncNavPadding);
+syncNavPadding();
 
