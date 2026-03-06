@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Majid — Full-Stack Developer crafting modern, high-performance web applications." />
+  <title>Majid | Full-Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== CANVAS BACKGROUND ===== -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar" id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Majid — Home">Majid</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="btn btn-primary nav-cta">Let's Talk</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Hi, I'm Majid</p>
+        <h1 class="hero-title" id="hero-heading">Building Digital<br /><span class="gradient-text">Experiences</span><br />That Matter</h1>
+        <p class="hero-desc">A passionate Full-Stack Developer crafting modern, high-performance web applications. I help startups and businesses turn ideas into polished digital products.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#projects" class="btn btn-outline">See Projects</a>
+        </div>
+        <div class="hero-scroll-hint" aria-hidden="true">
+          <span class="scroll-line"></span>
+          <span>Scroll</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <section class="marquee-section" aria-label="Tech stack">
+      <div class="marquee-track" aria-hidden="true">
+        <div class="marquee-inner" id="marquee-inner">
+          <span class="marquee-item"><span class="marquee-dot"></span>React</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Next.js</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>TypeScript</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Node.js</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Python</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>PostgreSQL</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>MongoDB</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Tailwind CSS</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Figma</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Docker</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>AWS</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Git</span>
+          <!-- Duplicated for seamless loop -->
+          <span class="marquee-item"><span class="marquee-dot"></span>React</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Next.js</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>TypeScript</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Node.js</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Python</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>PostgreSQL</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>MongoDB</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Tailwind CSS</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Figma</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Docker</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>AWS</span>
+          <span class="marquee-item"><span class="marquee-dot"></span>Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-col">
+            <div class="about-img-wrap">
+              <div class="about-img-placeholder" aria-label="Majid's professional headshot placeholder">
+                <div class="about-img-initials">MA</div>
+              </div>
+              <div class="about-img-badge">5+ Years Exp.</div>
+            </div>
+          </div>
+          <div class="about-content-col">
+            <span class="section-label">About Me</span>
+            <h2 class="section-title" id="about-heading">The Developer<br /><span class="gradient-text">Behind the Code</span></h2>
+            <p class="about-bio">With over 5 years of experience in web development, I specialize in building scalable, user-centric applications that drive results. From concept to deployment, I bring a unique blend of technical expertise and creative problem-solving to every project.</p>
+            <div class="timeline" role="list" aria-label="Work experience and education">
+              <div class="timeline-item" role="listitem">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Current</span>
+                  <h3 class="timeline-title">Senior Full-Stack Developer</h3>
+                  <p class="timeline-org">TechCorp</p>
+                </div>
+              </div>
+              <div class="timeline-item" role="listitem">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2022–2024</span>
+                  <h3 class="timeline-title">Full-Stack Developer</h3>
+                  <p class="timeline-org">WebStudio</p>
+                </div>
+              </div>
+              <div class="timeline-item" role="listitem">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2020–2022</span>
+                  <h3 class="timeline-title">Junior Developer</h3>
+                  <p class="timeline-org">StartupHub</p>
+                </div>
+              </div>
+              <div class="timeline-item" role="listitem">
+                <div class="timeline-dot timeline-dot--edu" aria-hidden="true"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2020</span>
+                  <h3 class="timeline-title">B.Sc. Computer Science</h3>
+                  <p class="timeline-org">University of Technology</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RECENT WORKS ===== -->
+    <section class="projects section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Recent Works</span>
+          <h2 class="section-title" id="projects-heading">Selected<br /><span class="gradient-text">Projects</span></h2>
+        </div>
+        <div class="projects-grid" role="list">
+
+          <article class="project-card project-card--large" role="listitem" tabindex="0" aria-label="E-Commerce Platform project">
+            <div class="project-card-inner" style="--card-gradient: linear-gradient(135deg, #0f2027, #203a43, #2c5364)">
+              <div class="project-overlay">
+                <a href="#" class="project-cta" aria-label="View E-Commerce Platform project">View Project</a>
+              </div>
+              <div class="project-info">
+                <span class="project-tag">Full-Stack</span>
+                <h3 class="project-title">E-Commerce Platform</h3>
+                <p class="project-desc">A full-stack e-commerce solution with real-time inventory management.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem" tabindex="0" aria-label="SaaS Dashboard project">
+            <div class="project-card-inner" style="--card-gradient: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460)">
+              <div class="project-overlay">
+                <a href="#" class="project-cta" aria-label="View SaaS Dashboard project">View Project</a>
+              </div>
+              <div class="project-info">
+                <span class="project-tag">Analytics</span>
+                <h3 class="project-title">SaaS Dashboard</h3>
+                <p class="project-desc">Analytics dashboard for a fintech startup.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem" tabindex="0" aria-label="Portfolio Redesign project">
+            <div class="project-card-inner" style="--card-gradient: linear-gradient(135deg, #200122, #6f0000, #2d0035)">
+              <div class="project-overlay">
+                <a href="#" class="project-cta" aria-label="Read Case Study for Portfolio Redesign">Read Case Study</a>
+              </div>
+              <div class="project-info">
+                <span class="project-tag">Design</span>
+                <h3 class="project-title">Portfolio Redesign</h3>
+                <p class="project-desc">Modern portfolio for a creative agency.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem" tabindex="0" aria-label="Mobile Banking App project">
+            <div class="project-card-inner" style="--card-gradient: linear-gradient(135deg, #0d0d0d, #1a3a4a, #005f73)">
+              <div class="project-overlay">
+                <a href="#" class="project-cta" aria-label="View Mobile Banking App project">View Project</a>
+              </div>
+              <div class="project-info">
+                <span class="project-tag">UI/UX</span>
+                <h3 class="project-title">Mobile Banking App</h3>
+                <p class="project-desc">UI/UX design and front-end development.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem" tabindex="0" aria-label="AI Content Generator project">
+            <div class="project-card-inner" style="--card-gradient: linear-gradient(135deg, #0f0c29, #302b63, #24243e)">
+              <div class="project-overlay">
+                <a href="#" class="project-cta" aria-label="View AI Content Generator project">View Project</a>
+              </div>
+              <div class="project-info">
+                <span class="project-tag">AI / Full-Stack</span>
+                <h3 class="project-title">AI Content Generator</h3>
+                <p class="project-desc">Full-stack AI-powered writing assistant.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem" tabindex="0" aria-label="Real Estate Platform project">
+            <div class="project-card-inner" style="--card-gradient: linear-gradient(135deg, #093028, #237a57, #0b4031)">
+              <div class="project-overlay">
+                <a href="#" class="project-cta" aria-label="View Real Estate Platform project">View Project</a>
+              </div>
+              <div class="project-info">
+                <span class="project-tag">Full-Stack</span>
+                <h3 class="project-title">Real Estate Platform</h3>
+                <p class="project-desc">Property listing and management system.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="process section" id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">How I Work</span>
+          <h2 class="section-title" id="process-heading">My<br /><span class="gradient-text">Process</span></h2>
+        </div>
+        <div class="process-grid" role="list">
+          <div class="process-step" role="listitem">
+            <span class="process-number" aria-hidden="true">01</span>
+            <h3 class="process-title">Discovery &amp; Strategy</h3>
+            <p class="process-desc">We start by understanding your vision, goals, and target audience to create a tailored roadmap for success.</p>
+          </div>
+          <div class="process-step" role="listitem">
+            <span class="process-number" aria-hidden="true">02</span>
+            <h3 class="process-title">Execution &amp; Build</h3>
+            <p class="process-desc">I bring the strategy to life with clean code, pixel-perfect design, and agile development practices.</p>
+          </div>
+          <div class="process-step" role="listitem">
+            <span class="process-number" aria-hidden="true">03</span>
+            <h3 class="process-title">Launch &amp; Support</h3>
+            <p class="process-desc">From deployment to ongoing maintenance, I ensure your product performs flawlessly in the real world.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="services-grid">
+          <div class="services-visual" aria-hidden="true">
+            <div class="services-visual-inner">
+              <div class="code-mockup">
+                <div class="code-mockup-header">
+                  <span class="code-dot code-dot--red"></span>
+                  <span class="code-dot code-dot--yellow"></span>
+                  <span class="code-dot code-dot--green"></span>
+                </div>
+                <pre class="code-mockup-body" aria-hidden="true"><code><span class="c-kw">const</span> <span class="c-fn">buildApp</span> = <span class="c-kw">async</span> () =&gt; {
+  <span class="c-kw">const</span> idea = <span class="c-kw">await</span> <span class="c-fn">understand</span>(client);
+  <span class="c-kw">const</span> design = <span class="c-fn">craft</span>(idea, creativity);
+  <span class="c-kw">const</span> code = <span class="c-fn">build</span>(design, performance);
+  <span class="c-kw">return</span> <span class="c-fn">launch</span>(code, <span class="c-str">'production'</span>);
+};
+
+<span class="c-fn">buildApp</span>()
+  .<span class="c-fn">then</span>(result =&gt; {
+    console.<span class="c-fn">log</span>(<span class="c-str">'Success 🚀'</span>, result);
+  });
+</code></pre>
+              </div>
+            </div>
+          </div>
+          <div class="services-content">
+            <span class="section-label">What I Offer</span>
+            <h2 class="section-title" id="services-heading">Services<br /><span class="gradient-text">Built for Impact</span></h2>
+            <ul class="services-list" role="list">
+              <li class="service-item">
+                <div class="service-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <div>
+                  <h3 class="service-title">Web Development</h3>
+                  <p class="service-desc">Custom websites and web applications built with modern frameworks and best practices.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                </div>
+                <div>
+                  <h3 class="service-title">UI/UX Design</h3>
+                  <p class="service-desc">Intuitive, beautiful interfaces that prioritize user experience and engagement.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                </div>
+                <div>
+                  <h3 class="service-title">API Development</h3>
+                  <p class="service-desc">Robust, scalable APIs and backend systems that power your applications.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </div>
+                <div>
+                  <h3 class="service-title">SEO Optimization</h3>
+                  <p class="service-desc">Data-driven strategies to improve your search rankings and online visibility.</p>
+                </div>
+              </li>
+            </ul>
+            <div class="skills-pills" role="list" aria-label="Core technologies">
+              <span class="pill" role="listitem">React</span>
+              <span class="pill" role="listitem">Next.js</span>
+              <span class="pill" role="listitem">TypeScript</span>
+              <span class="pill" role="listitem">Node.js</span>
+              <span class="pill" role="listitem">Python</span>
+              <span class="pill" role="listitem">PostgreSQL</span>
+              <span class="pill" role="listitem">Docker</span>
+              <span class="pill" role="listitem">AWS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials section" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Client Reviews</span>
+          <h2 class="section-title" id="testimonials-heading">What Clients<br /><span class="gradient-text">Are Saying</span></h2>
+        </div>
+        <div class="testimonials-grid" role="list">
+
+          <article class="testimonial-card" role="listitem">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Majid transformed our vision into a stunning platform. His attention to detail and technical expertise are unmatched."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">SJ</div>
+              <div>
+                <cite class="testimonial-name">Sarah Johnson</cite>
+                <p class="testimonial-role">CEO at StartupFlow</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card" role="listitem">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Working with Majid was a game-changer. He delivered a complex dashboard ahead of schedule with incredible quality."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">DC</div>
+              <div>
+                <cite class="testimonial-name">David Chen</cite>
+                <p class="testimonial-role">Product Manager at TechVentures</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card" role="listitem">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Majid's ability to blend design and development is rare. Our website traffic increased by 200% after the redesign."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">ER</div>
+              <div>
+                <cite class="testimonial-name">Emily Rodriguez</cite>
+                <p class="testimonial-role">Founder of CreativeHub</p>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid" role="list" aria-label="Key statistics">
+          <div class="stat-item" role="listitem">
+            <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+            <p class="stat-label">Projects Completed</p>
+          </div>
+          <div class="stat-item" role="listitem">
+            <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+            <p class="stat-label">Client Satisfaction</p>
+          </div>
+          <div class="stat-item" role="listitem">
+            <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+            <p class="stat-label">Years Experience</p>
+          </div>
+          <div class="stat-item" role="listitem">
+            <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
+            <p class="stat-label">Happy Clients</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq section" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="faq-inner">
+          <div class="section-header faq-header">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title" id="faq-heading">Frequently Asked<br /><span class="gradient-text">Questions</span></h2>
+          </div>
+          <dl class="faq-list" id="faq-list">
+
+            <div class="faq-item" role="presentation">
+              <dt>
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1">
+                  What is your pricing structure?
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+              </dt>
+              <dd id="faq-a-1" role="region" aria-labelledby="faq-q-1" class="faq-answer" hidden>
+                <p>I offer flexible pricing based on project scope, including fixed-price packages and hourly rates. Let's discuss your needs for a custom quote.</p>
+              </dd>
+            </div>
+
+            <div class="faq-item" role="presentation">
+              <dt>
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2">
+                  How long does a typical project take?
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+              </dt>
+              <dd id="faq-a-2" role="region" aria-labelledby="faq-q-2" class="faq-answer" hidden>
+                <p>Timelines vary by complexity, but most projects are completed within 4–8 weeks. I provide detailed milestones and regular updates.</p>
+              </dd>
+            </div>
+
+            <div class="faq-item" role="presentation">
+              <dt>
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3">
+                  Do you offer ongoing support?
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+              </dt>
+              <dd id="faq-a-3" role="region" aria-labelledby="faq-q-3" class="faq-answer" hidden>
+                <p>Absolutely! I provide post-launch maintenance packages to keep your project running smoothly and up-to-date.</p>
+              </dd>
+            </div>
+
+            <div class="faq-item" role="presentation">
+              <dt>
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4">
+                  What technologies do you specialize in?
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+              </dt>
+              <dd id="faq-a-4" role="region" aria-labelledby="faq-q-4" class="faq-answer" hidden>
+                <p>I work with React, Next.js, Node.js, Python, PostgreSQL, and more. I choose the best tools for each project's unique requirements.</p>
+              </dd>
+            </div>
+
+            <div class="faq-item" role="presentation">
+              <dt>
+                <button class="faq-trigger" aria-expanded="false" aria-controls="faq-a-5" id="faq-q-5">
+                  Can you work with my existing team?
+                  <span class="faq-icon" aria-hidden="true"></span>
+                </button>
+              </dt>
+              <dd id="faq-a-5" role="region" aria-labelledby="faq-q-5" class="faq-answer" hidden>
+                <p>Yes, I frequently collaborate with in-house teams and can adapt to your existing workflows and tech stack.</p>
+              </dd>
+            </div>
+
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA / CONTACT ===== -->
+    <section class="cta-section" id="contact" aria-labelledby="cta-heading">
+      <div class="cta-canvas-overlay" aria-hidden="true"></div>
+      <div class="container cta-content">
+        <p class="cta-eyebrow">Ready to Start?</p>
+        <h2 class="cta-title" id="cta-heading">Curious about what we can create together?<br /><span class="gradient-text">Let's bring something extraordinary to life!</span></h2>
+        <a href="mailto:majid@example.com" class="btn btn-primary btn-large">Book a Call</a>
+        <a href="mailto:majid@example.com" class="cta-email">majid@example.com</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <a href="#hero" class="footer-logo" aria-label="Back to top">Majid</a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#services" class="footer-link">Services</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#testimonials" class="footer-link">Testimonials</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </nav>
+      <div class="footer-socials" aria-label="Social links">
+        <a href="https://github.com/" class="social-link" aria-label="GitHub" rel="noopener noreferrer" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        </a>
+        <a href="https://linkedin.com/" class="social-link" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://twitter.com/" class="social-link" aria-label="Twitter / X" rel="noopener noreferrer" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 Majid. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
