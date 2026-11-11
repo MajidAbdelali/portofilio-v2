@@ -212,7 +212,7 @@
     fill: var(--gold);
   }
   .home__blob-img {
-    width: 390px;
+    width: 450px;
   }
   .btn-primary {
     padding: 0.9rem 2.2rem;
@@ -1261,5 +1261,4 @@
       margin-bottom: 2rem;
     }
   }
-
 
